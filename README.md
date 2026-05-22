@@ -1,2 +1,2 @@
 # RISK-PROFILING
-ai tool used to categorize potential SNAP authorized stores of benefits trafficking 
+An AI tool used to categorize SNAP-authorized stores of potential benefits trafficking 
