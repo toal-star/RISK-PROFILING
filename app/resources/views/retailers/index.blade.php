@@ -145,7 +145,11 @@
                 <tbody class="divide-y divide-slate-700/50 bg-slate-900">
                     @forelse ($retailers as $retailer)
                         <tr class="transition-colors hover:bg-slate-800/50">
-                            <td class="px-4 py-3 font-medium text-slate-100">{{ $retailer->store_name }}</td>
+                            <td class="px-4 py-3 font-medium text-slate-100">
+<a href="{{ route('retailers.show', $retailer->id) }}" class=hover:text-blue-400 transition-colors">
+{{ $retailer->store_name }} 
+</a> 
+</td> 
                             <td class="px-4 py-3 text-slate-400">{{ $retailer->store_type }}</td>
                             <td class="px-4 py-3 text-slate-400">{{ $retailer->borough }}</td>
                             <td class="px-4 py-3 text-slate-400">{{ $retailer->zip_code }}</td>
